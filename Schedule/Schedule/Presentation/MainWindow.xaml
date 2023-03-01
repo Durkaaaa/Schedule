@@ -9,8 +9,8 @@
     WindowStartupLocation="CenterScreen"
     FontFamily="Century Schoolbook"
     Title="Расписание"
-    Height="660" 
-    MinHeight="660" 
+    Height="700" 
+    MinHeight="700" 
     Width="1150"
     MinWidth="1150">
 
