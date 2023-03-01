@@ -7,7 +7,8 @@
     xmlns:local="clr-namespace:Schedule.Presentation"
     mc:Ignorable="d" 
     d:DesignHeight="660" 
-    d:DesignWidth="1100"
+    d:DesignWidth="1130"
+    FontFamily="Century Schoolbook"
     Title="SchedulePage">
 
     <Page.Resources>
@@ -21,39 +22,217 @@
                         <Border
                             BorderBrush="{StaticResource BorderBrush}"
                             BorderThickness="1"
-                            Margin="5">
+                            Margin="0,0,0,5">
                             <Grid
                                 Background="{TemplateBinding Background}">
-                                <Grid
-                                    Grid.Column="1">
-                                    <Grid.RowDefinitions>
-                                        <RowDefinition/>
-                                        <RowDefinition/>
-                                    </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="40"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                    <ColumnDefinition Width="1*"/>
+                                </Grid.ColumnDefinitions>
 
+                                <TextBlock
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Text="№"/>
+
+                                <Border
+                                    Grid.Column="1"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1,0,0,0">
                                     <Grid>
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="*"/>
-                                            <ColumnDefinition Width="25"/>
-                                            <ColumnDefinition Width="35"/>
-                                        </Grid.ColumnDefinitions>
-                                        <TextBlock 
-                                            Text="Информатика"/>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="25"/>
+                                                <ColumnDefinition Width="35"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Text="Информатика"
+                                                Margin="5,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="1"
+                                                Text="233"
+                                                Margin="0,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="2"
+                                                Text="10:00"
+                                                Margin="0,5,0,0"/>
+                                        </Grid>
 
                                         <TextBlock
-                                            Grid.Column="1"
-                                            Text="233"/>
-
-                                        <TextBlock
-                                            Grid.Column="2"
-                                            Text="10:00"/>
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            Text="Преподователь"
+                                            Margin="0,2,0,5"/>
                                     </Grid>
+                                </Border>
 
-                                    <TextBlock
-                                        Grid.Row="1"
-                                        HorizontalAlignment="Center"
-                                        Text="Преподователь"/>
-                                </Grid>
+                                <Border
+                                    Grid.Column="2"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1,0,0,0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="25"/>
+                                                <ColumnDefinition Width="35"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Text="Информатика"
+                                                Margin="5,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="1"
+                                                Text="233"
+                                                Margin="0,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="2"
+                                                Text="10:00"
+                                                Margin="0,5,0,0"/>
+                                        </Grid>
+
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            Text="Преподователь"
+                                            Margin="0,2,0,5"/>
+                                    </Grid>
+                                </Border>
+
+                                <Border
+                                    Grid.Column="3"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1,0,0,0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="25"/>
+                                                <ColumnDefinition Width="35"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Text="Информатика"
+                                                Margin="5,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="1"
+                                                Text="233"
+                                                Margin="0,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="2"
+                                                Text="10:00"
+                                                Margin="0,5,0,0"/>
+                                        </Grid>
+
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            Text="Преподователь"
+                                            Margin="0,2,0,5"/>
+                                    </Grid>
+                                </Border>
+
+                                <Border
+                                    Grid.Column="4"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1,0,0,0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="25"/>
+                                                <ColumnDefinition Width="35"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Text="Информатика"
+                                                Margin="5,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="1"
+                                                Text="233"
+                                                Margin="0,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="2"
+                                                Text="10:00"
+                                                Margin="0,5,0,0"/>
+                                        </Grid>
+
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            Text="Преподователь"
+                                            Margin="0,2,0,5"/>
+                                    </Grid>
+                                </Border>
+
+                                <Border
+                                    Grid.Column="5"
+                                    BorderBrush="{StaticResource BorderBrush}"
+                                    BorderThickness="1,0,0,0">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+
+                                        <Grid>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="*"/>
+                                                <ColumnDefinition Width="25"/>
+                                                <ColumnDefinition Width="35"/>
+                                            </Grid.ColumnDefinitions>
+                                            <TextBlock 
+                                                Text="Информатика"
+                                                Margin="5,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="1"
+                                                Text="233"
+                                                Margin="0,5,0,0"/>
+
+                                            <TextBlock
+                                                Grid.Column="2"
+                                                Text="10:00"
+                                                Margin="0,5,0,0"/>
+                                        </Grid>
+
+                                        <TextBlock
+                                            Grid.Row="1"
+                                            HorizontalAlignment="Center"
+                                            Text="Преподователь"
+                                            Margin="0,2,0,5"/>
+                                    </Grid>
+                                </Border>
                             </Grid>
                         </Border>
                     </ControlTemplate>
@@ -72,93 +251,64 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="20"/>
-            <ColumnDefinition Width="40"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
-            <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="1*"/>
             <ColumnDefinition Width="20"/>
         </Grid.ColumnDefinitions>
 
-        <TextBlock
-            Grid.Column="1"
-            Style="{StaticResource TextBlock}"
-            HorizontalAlignment="Center"
-            Text="№"/>
+        <Grid
+            Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="43"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
 
-        <TextBlock
-            Grid.Column="2"
-            Style="{StaticResource TextBlock}"
-            HorizontalAlignment="Center"
-            Text="Понедельник"/>
+            <TextBlock
+                Style="{StaticResource TextBlock}"
+                HorizontalAlignment="Center"
+                Text="№"/>
 
-        <ListView
-            Grid.Column="2"
-            Grid.Row="1"
-            BorderThickness="0">
-            <TextBlock/>
-            <TextBlock/>
-        </ListView>
+            <TextBlock
+                Grid.Column="1"
+                Style="{StaticResource TextBlock}"
+                HorizontalAlignment="Center"
+                Text="Понедельник"/>
 
-        <TextBlock
-            Grid.Column="3"
-            Style="{StaticResource TextBlock}"
-            HorizontalAlignment="Center"
-            Text="Вторник"/>
+            <TextBlock
+                Grid.Column="2"
+                Style="{StaticResource TextBlock}"
+                HorizontalAlignment="Center"
+                Text="Вторник"/>
 
-        <ListView
-            Grid.Column="3"
-            Grid.Row="1"
-            BorderThickness="0">
-            <TextBlock/>
-            <TextBlock/>
-            <TextBlock/>
-        </ListView>
+            <TextBlock
+                Grid.Column="3"
+                Style="{StaticResource TextBlock}"
+                HorizontalAlignment="Center"
+                Text="Среда"/>
 
-        <TextBlock
-            Grid.Column="4"
-            Style="{StaticResource TextBlock}"
-            HorizontalAlignment="Center"
-            Text="Среда"/>
+            <TextBlock
+                Grid.Column="4"
+                Style="{StaticResource TextBlock}"
+                HorizontalAlignment="Center"
+                Text="Четверг"/>
 
-        <ListView
-            Grid.Column="4"
-            Grid.Row="1"
-            BorderThickness="0">
-            <TextBlock/>
-            <TextBlock/>
-            <TextBlock/>
-            <TextBlock/>
-            <TextBlock/>
-            <TextBlock/>
-        </ListView>
-
-        <TextBlock
-            Grid.Column="5"
-            Style="{StaticResource TextBlock}"
-            HorizontalAlignment="Center"
-            Text="Четверг"/>
+            <TextBlock
+                Grid.Column="5"
+                Style="{StaticResource TextBlock}"
+                HorizontalAlignment="Center"
+                Text="Пятница"/>
+        </Grid>
 
         <ListView
-            Grid.Column="5"
+            BorderThickness="0"
             Grid.Row="1"
-            BorderThickness="0">
+            Grid.Column="1">
             <TextBlock/>
             <TextBlock/>
             <TextBlock/>
-        </ListView>
-
-        <TextBlock
-            Grid.Column="6"
-            Style="{StaticResource TextBlock}"
-            HorizontalAlignment="Center"
-            Text="Пятница"/>
-
-        <ListView
-            Grid.Column="6"
-            Grid.Row="1"
-            BorderThickness="0">
             <TextBlock/>
             <TextBlock/>
         </ListView>
