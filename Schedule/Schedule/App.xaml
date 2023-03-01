@@ -4,6 +4,67 @@
              xmlns:local="clr-namespace:Schedule"
              StartupUri="Presentation/MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <SolidColorBrush x:Key="ColorMainPrimary">#1F2833</SolidColorBrush>
+            <SolidColorBrush x:Key="ColorMainSecond">#0B0C10</SolidColorBrush>
+            <SolidColorBrush x:Key="СolorFontPrimary">#C5C6C7</SolidColorBrush>
+            <SolidColorBrush x:Key="СolorFontSecond">#66FCF1</SolidColorBrush>
+            <SolidColorBrush x:Key="СolorAccent">#45A29E</SolidColorBrush>
+
+            <LinearGradientBrush x:Key="BorderBrush" 
+                EndPoint="0.5,1" 
+                StartPoint="0.5,0">
+                <GradientStop Color="#FF0B0C10"/>
+                <GradientStop Color="#FF0B0C10" Offset="1"/>
+                <GradientStop Color="#FF202833" Offset="0.5"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="Background" 
+                EndPoint="0.5,1" 
+                StartPoint="0.5,0">
+                <GradientStop Color="Gray"/>
+                <GradientStop Color="Gray" Offset="1"/>
+                <GradientStop Color="White" Offset="0.5"/>
+            </LinearGradientBrush>
+
+            <Style x:Key="Image"
+                TargetType="Image">
+                <Setter Property="Width"
+                        Value="40"/>
+                <Style.Triggers>
+                    <Trigger Property="IsEnabled" 
+                             Value="False">
+                        <Setter Property="Opacity" 
+                                Value="0.3"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="TextBlock"
+                TargetType="TextBlock">
+                <Setter Property="VerticalAlignment"
+                        Value="Center"/>
+                <Setter Property="FontSize"
+                        Value="18"/>
+                <Style.Triggers>
+                    <Trigger Property="IsEnabled"
+                             Value="False">
+                        <Setter Property="Opacity" 
+                                Value="0.3"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+
+            <Style x:Key="Border"
+                TargetType="Border">
+                <Style.Triggers>
+                    <Trigger Property="IsEnabled"
+                             Value="False">
+                        <Setter Property="Opacity" 
+                                Value="0.3"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

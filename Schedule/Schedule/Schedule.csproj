@@ -8,10 +8,51 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Icon\IconAccount.png" />
+    <None Remove="Resources\Icon\IconEmployee.png" />
+    <None Remove="Resources\Icon\IconExit.png" />
+    <None Remove="Resources\Icon\IconGroup.png" />
+    <None Remove="Resources\Icon\IconLogin.png" />
+    <None Remove="Resources\Icon\IconParent.png" />
+    <None Remove="Resources\Icon\IconPassword.png" />
+    <None Remove="Resources\Icon\IconSchedule.png" />
+    <None Remove="Resources\Icon\IconStudent.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\Icon\IconAccount.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconEmployee.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconExit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconGroup.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconLogin.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconParent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconPassword.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconSchedule.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\Icon\IconStudent.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Domain\Entities\" />
     <Folder Include="Infrastructure\Persistence\" />
     <Folder Include="Presentation\ViewModel\" />
-    <Folder Include="Resources\" />
   </ItemGroup>
 
 </Project>
