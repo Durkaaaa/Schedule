@@ -6,13 +6,12 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:Schedule.Presentation"
     mc:Ignorable="d"
+    ResizeMode="NoResize"
     WindowStartupLocation="CenterScreen"
     FontFamily="Century Schoolbook"
     Title="Расписание"
-    Height="700" 
-    MinHeight="700" 
-    Width="1150"
-    MinWidth="1150">
+    Height="700"     
+    Width="1150">
 
     <Window.Resources>
         <Style

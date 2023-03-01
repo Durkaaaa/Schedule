@@ -24,5 +24,27 @@ namespace Schedule.Presentation
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            PrintDialog printDialog = new PrintDialog();
+            if (printDialog.ShowDialog() == true)
+            {
+                // Определить поля
+                int pageMargin = 10;
+
+                // Получить размер страницы
+                Size pageSize = new Size(printDialog.PrintableAreaWidth,
+                    printDialog.PrintableAreaHeight);
+
+                //// Инициировать установку размера элемента
+                //List.Measure(pageSize);
+                List.Arrange(new Rect(pageMargin, pageMargin, pageSize.Width, pageSize.Height));
+
+                // Напечатать элемент
+                printDialog.PrintVisual(List, "Распечатываем элемент Canvas");
+
+            }
+        }
     }
 }

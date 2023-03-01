@@ -303,6 +303,7 @@
         </Grid>
 
         <ListView
+            x:Name="List"
             BorderThickness="0"
             Grid.Row="1"
             Grid.Column="1">
@@ -366,6 +367,10 @@
                         FontSize="18"/>
                 </StackPanel>
             </Border>
+
+            <Button
+                Content="123"
+                Click="Button_Click"/>
         </StackPanel>
     </Grid>
 </Page>
