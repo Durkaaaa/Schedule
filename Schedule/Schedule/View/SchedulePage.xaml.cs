@@ -10,19 +10,19 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Schedule.Presentation
+namespace Schedule.View
 {
     /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
+    /// Логика взаимодействия для SchedulePage.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class SchedulePage : Page
     {
-        public MainWindow()
+        public SchedulePage()
         {
             InitializeComponent();
-            FramePage.Content = new SchedulePage();
         }
     }
 }
