@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Schedule.Entities
 {
-    public class Subject
+    public class Class
     {
         public int Id { get; set; }
         public string Title { get; set; }
-        public int NumberOfHours { get; set; }
-        public int Load { get; set; }
+        public int NumberOfPersons { get; set; }
     }
 }

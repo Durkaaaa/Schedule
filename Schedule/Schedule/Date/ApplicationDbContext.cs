@@ -10,12 +10,7 @@ namespace Schedule.Date
 {
     public class ApplicationDbContext : DbContext
     {
-        public virtual DbSet<Teacher> Teachers { get; set; }
-        public virtual DbSet<ScheduleList> ScheduleLists { get; set; }
-        public virtual DbSet<TeacherSubjectSchoolClass> TeacherSubjectSchoolClasses { get; set; }
-        public virtual DbSet<SchoolClass> SchoolClasses { get; set; }
-        public virtual DbSet<Subject> Subjects { get; set; }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
